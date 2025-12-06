@@ -4,33 +4,98 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="" />
+    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="不包括class文件的第一次提交">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/OrderLogistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/OrderLogistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/vo/CartVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/domain/vo/CartVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/AddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/AddressMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/CartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/CartMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/ItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/ItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/OrderDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/OrderLogisticsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/OrderLogisticsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/PayOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/PayOrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IAddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IAddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/ICartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/ICartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IOrderDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IOrderDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IOrderLogisticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IOrderLogisticsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IPayOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IPayOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/OrderDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/OrderLogisticsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/OrderLogisticsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/PayOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/PayOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/application-local.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/resources/application-local.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hm-service/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hm-service/spring.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LJJljj1230&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LJJljj1230/third.git&quot;,
+    &quot;accountId&quot;: &quot;bef10146-1887-41ca-848c-3f096410c7b3&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="36PfykZcUTbPRnZG9SsvHFVf584" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.HMallApplication.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HMallApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="HMallApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="hm-service" />
@@ -55,11 +120,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764913384521</updated>
-      <workItem from="1764913387432" duration="68000" />
+      <workItem from="1764913387432" duration="741000" />
+      <workItem from="1764916374433" duration="20000" />
+      <workItem from="1764993410137" duration="543000" />
     </task>
+    <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
+      <option name="closed" value="true" />
+      <created>1764913666366</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764913666366</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="不包括class文件的第一次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="不包括class文件的第一次提交" />
   </component>
 </project>
