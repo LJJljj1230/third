@@ -38,7 +38,7 @@ knife4j:
         group-name: default
         api-rule: package
         api-rule-resources:
-          - com.hmall.controller
+          - com.hmall.item.controller
 hm:
   jwt:
     location: classpath:hmall.jks

@@ -38,4 +38,4 @@ knife4j:
         group-name: default
         api-rule: package
         api-rule-resources:
-          - com.cart.controller
+          - com.hmall.cart.controller
