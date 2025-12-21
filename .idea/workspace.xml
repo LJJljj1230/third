@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="黑马商城最新版本">
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/client/item_client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/config/RemoteCallConfig.java" afterDir="false" />
+    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="openfreign">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,8 +123,8 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="cartApplication" value="FAILED" />
-              <entry key="itemApplication" value="FAILED" />
+              <entry key="cartApplication" value="STOPPED" />
+              <entry key="itemApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -188,9 +182,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.itemApplication 8181" />
         <item itemvalue="Spring Boot.itemApplication" />
         <item itemvalue="Spring Boot.cartApplication" />
-        <item itemvalue="Spring Boot.itemApplication 8181" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +210,7 @@
       <workItem from="1766148070625" duration="2454000" />
       <workItem from="1766194843706" duration="9671000" />
       <workItem from="1766210331838" duration="8175000" />
-      <workItem from="1766281350064" duration="2652000" />
+      <workItem from="1766281350064" duration="5881000" />
     </task>
     <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
       <option name="closed" value="true" />
@@ -250,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766198952374</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="openfreign">
+      <option name="closed" value="true" />
+      <created>1766284940903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1766284940903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +272,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="不包括class文件的第一次提交" />
     <MESSAGE value="黑马商城最新版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="黑马商城最新版本" />
+    <MESSAGE value="openfreign" />
+    <option name="LAST_COMMIT_MESSAGE" value="openfreign" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
