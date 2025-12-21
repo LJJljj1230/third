@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="openfreign">
+    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="openfreign连接池开启">
+      <change afterPath="$PROJECT_DIR$/hm-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/config/DefaultFeignConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/client/item_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/item_client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/domain/dto/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/dto/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +89,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/springcluod/hmall/cart-service/src/main/java/com/heima/Main.java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/springcluod/hmall/hm-api/src/main/java/com/heima/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -102,11 +111,11 @@
       <recent name="D:\springcluod\hmall\item-service\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hmall.cart.service" />
       <recent name="com.hmall.cart.domain.dto" />
+      <recent name="com.heima.hmall.dto" />
+      <recent name="com.hmall.cart.service" />
       <recent name="com.hmall.cart.service.impl" />
       <recent name="com.hmall.cart.mapper" />
-      <recent name="com.hmall.cart.domain.vo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -125,6 +134,7 @@
             <map>
               <entry key="cartApplication" value="STOPPED" />
               <entry key="itemApplication" value="STOPPED" />
+              <entry key="itemApplication 8181" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -182,9 +192,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.cartApplication" />
         <item itemvalue="Spring Boot.itemApplication 8181" />
         <item itemvalue="Spring Boot.itemApplication" />
-        <item itemvalue="Spring Boot.cartApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +220,7 @@
       <workItem from="1766148070625" duration="2454000" />
       <workItem from="1766194843706" duration="9671000" />
       <workItem from="1766210331838" duration="8175000" />
-      <workItem from="1766281350064" duration="5881000" />
+      <workItem from="1766281350064" duration="17234000" />
     </task>
     <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
       <option name="closed" value="true" />
@@ -252,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766284940903</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="openfreign连接池开启">
+      <option name="closed" value="true" />
+      <created>1766294365545</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1766294365545</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +291,8 @@
     <MESSAGE value="不包括class文件的第一次提交" />
     <MESSAGE value="黑马商城最新版本" />
     <MESSAGE value="openfreign" />
-    <option name="LAST_COMMIT_MESSAGE" value="openfreign" />
+    <MESSAGE value="openfreign连接池开启" />
+    <option name="LAST_COMMIT_MESSAGE" value="openfreign连接池开启" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

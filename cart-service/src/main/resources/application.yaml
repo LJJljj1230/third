@@ -23,7 +23,9 @@ mybatis-plus:
 logging:
   level:
     com.hmall: debug
-    org.springframework.web.client: DEBUG # RestTemplate调用日志
+    com.heima.hmall.client: debug
+    okhttp3: DEBUG # 开启OkHttp的DEBUG日志
+
   pattern:
     dateformat: HH:mm:ss:SSS
   file:
@@ -47,5 +49,13 @@ knife4j:
 feign:
   okhttp:
     enabled: true
+    #配置feign也可从yml直接指定日志的级别，可省略写配置级别类。
+#  client:
+#    config:
+#      default:  # 这个default是Map的key，代表“所有客户端”，必须写！
+#        loggerLevel: FULL  # 日志级别：NONE/BASIC/HEADERS/FULL
+#        # 可选：还能加超时等其他配置
+#        connectTimeout: 5000
+#        readTimeout: 10000
 
 
