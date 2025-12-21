@@ -1,8 +1,10 @@
 package com.hmall.cart.service.impl;
 
+import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hmall.cart.client.item_client;
 import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
 import com.hmall.common.utils.CollUtils;
@@ -14,12 +16,16 @@ import com.hmall.cart.domain.vo.CartVO;
 import com.hmall.cart.mapper.CartMapper;
 import com.hmall.cart.service.ICartService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -36,6 +42,11 @@ import java.util.stream.Collectors;
 public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements ICartService {
 
     //private final IItemService itemService;
+    @Autowired
+    private RestTemplate restTemplate;
+    @Autowired
+    private DiscoveryClient discoveryClient;
+    private final item_client client;
 
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
@@ -80,25 +91,48 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     }
 
     private void handleCartItems(List<CartVO> vos) {
-        // 1.获取商品id
-//        Set<Long> itemIds = vos.stream().map(CartVO::getItemId).collect(Collectors.toSet());
+//        // 1.获取商品id
+       Set<Long> itemIds = vos.stream().map(CartVO::getItemId).collect(Collectors.toSet());
 //        // 2.查询商品
-//        List<ItemDTO> items = itemService.queryItemByIds(itemIds);
-//        if (CollUtils.isEmpty(items)) {
-//            return;
+//        //3.获取注册中心item-service的服务列表
+//        List<ServiceInstance> instanceList=discoveryClient.getInstances("item-service");
+//        //从上面的服务中随机获得一个服务的实例
+//        ServiceInstance serviceInstance = instanceList.get(RandomUtil.randomInt(instanceList.size()));
+//
+//
+//        //String itemUrl = "http://localhost:8082/items?ids={ids}";
+//        //获取地址
+//        String itemUrl=serviceInstance.getUri()+"/items?ids={ids}";
+//        ResponseEntity<List<ItemDTO>> response = restTemplate.exchange(
+//                itemUrl,//请求路径
+//                HttpMethod.GET,//请求方式
+//                null,//请求实体
+//                new ParameterizedTypeReference<List<ItemDTO>>() {
+//                },//响应数据类型
+//                Map.of("ids", CollUtils.join(itemIds, ","))//请求参数
+//        );
+//        List<ItemDTO> items = null;
+//        if (response.getStatusCode().is2xxSuccessful()) {
+//            items = response.getBody();
 //        }
-//        // 3.转为 id 到 item的map
-//        Map<Long, ItemDTO> itemMap = items.stream().collect(Collectors.toMap(ItemDTO::getId, Function.identity()));
-//        // 4.写入vo
-//        for (CartVO v : vos) {
-//            ItemDTO item = itemMap.get(v.getItemId());
-//            if (item == null) {
-//                continue;
-//            }
-//            v.setNewPrice(item.getPrice());
-//            v.setStatus(item.getStatus());
-//            v.setStock(item.getStock());
-//        }
+        List<ItemDTO> items = client.queryItemByIds(itemIds);
+        if (CollUtils.isEmpty(items)) {
+            return;
+        }
+
+        // 3.转为 id 到 item的map
+        Map<Long, ItemDTO> itemMap = items.stream().collect(Collectors.toMap(ItemDTO::getId, Function.identity()));
+        // 4.写入vo
+        for (CartVO v : vos) {
+            ItemDTO item = itemMap.get(v.getItemId());
+            if (item == null) {
+                continue;
+            }
+            v.setNewPrice(item.getPrice());
+            v.setStatus(item.getStatus());
+            v.setStock(item.getStock());
+}
+
     }
 
     @Override

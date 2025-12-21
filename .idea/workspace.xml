@@ -5,22 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="黑马商城最新版本">
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/domain/dto/CartFormDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/domain/dto/ItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/domain/po/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/domain/vo/CartVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/mapper/CartMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/ICartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/client/item_client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/config/RemoteCallConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,52 +53,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JBLSPRINGBOOTAPP.CB_APP_CONFIG": "false",
-    "JBLSPRINGBOOTAPP.CB_DELETE_FILE": "false",
-    "JBLSPRINGBOOTAPP.CB_FEIGN_CLIENTS": "false",
-    "JBLSPRINGBOOTAPP.CB_GEN_PACKAGE": "true",
-    "JBLSPRINGBOOTAPP.CB_MAPPER_SCAN": "true",
-    "JBLSPRINGBOOTAPP.CB_RESOURCES": "false",
-    "JBLSPRINGBOOTAPP.CB_START": "true",
-    "JBLSPRINGBOOTAPP.TF_DELETE_FILE": "App.java,AppTest.java",
-    "JBLSPRINGBOOTAPP.TF_GEN_PACKAGE": "controller,service,mapper,domain.dto,domain.vo,domain.po",
-    "JBLSPRINGBOOTAPPGEN.APPNAME": "com.hmall.cart.itemApplication",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.HMallApplication.executor": "Run",
-    "Spring Boot.cartApplication.executor": "Run",
-    "Spring Boot.itemApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/springcluod/hmall/cart-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/springcluod/hmall/cart-service/src/main/java/com/heima/Main.java",
-    "project.structure.last.edited": "项目",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DataGrid.QuickDoc.View&quot;: &quot;TRANSPOSED&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_APP_CONFIG&quot;: &quot;false&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_DELETE_FILE&quot;: &quot;false&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_FEIGN_CLIENTS&quot;: &quot;false&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_GEN_PACKAGE&quot;: &quot;true&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_MAPPER_SCAN&quot;: &quot;true&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_RESOURCES&quot;: &quot;false&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_START&quot;: &quot;true&quot;,
+    &quot;JBLSPRINGBOOTAPP.TF_DELETE_FILE&quot;: &quot;App.java,AppTest.java&quot;,
+    &quot;JBLSPRINGBOOTAPP.TF_GEN_PACKAGE&quot;: &quot;controller,service,mapper,domain.dto,domain.vo,domain.po&quot;,
+    &quot;JBLSPRINGBOOTAPPGEN.APPNAME&quot;: &quot;com.hmall.cart.itemApplication&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HMallApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.cartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.itemApplication 8181.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.itemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/springcluod/hmall/cart-service/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/springcluod/hmall/cart-service/src/main/java/com/heima/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mysql_aurora"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mysql_aurora&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\springcluod\hmall\cart-service\src\main\resources" />
@@ -123,7 +129,8 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="cartApplication" value="STOPPED" />
+              <entry key="cartApplication" value="FAILED" />
+              <entry key="itemApplication" value="FAILED" />
             </map>
           </value>
         </entry>
@@ -152,6 +159,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="itemApplication 8181" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="item-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.item.itemApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8181" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmall.item.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="itemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="item-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.item.itemApplication" />
@@ -167,8 +188,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.cartApplication" />
         <item itemvalue="Spring Boot.itemApplication" />
+        <item itemvalue="Spring Boot.cartApplication" />
+        <item itemvalue="Spring Boot.itemApplication 8181" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +214,9 @@
       <workItem from="1764993410137" duration="6214000" />
       <workItem from="1766142108636" duration="5018000" />
       <workItem from="1766148070625" duration="2454000" />
-      <workItem from="1766194843706" duration="3741000" />
+      <workItem from="1766194843706" duration="9671000" />
+      <workItem from="1766210331838" duration="8175000" />
+      <workItem from="1766281350064" duration="2652000" />
     </task>
     <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
       <option name="closed" value="true" />
@@ -218,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766195684735</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="黑马商城最新版本">
+      <option name="closed" value="true" />
+      <created>1766198952374</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766198952374</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
