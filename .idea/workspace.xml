@@ -4,51 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="openfreign连接池开启">
-      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/ICartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/dto/OrderDetailDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/domain/dto/OrderFormDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/domain/po/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/domain/po/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/domain/po/OrderDetailDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/domain/po/OrderLogistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/domain/vo/OrderVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/mapper/OrderDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/mapper/OrderLogisticsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/IOrderDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/IOrderLogisticsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/IOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderLogisticsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/resources/application-local.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/config/AuthProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/config/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/domain/dto/LoginFormDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/domain/po/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/domain/vo/UserLoginVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/enums/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/hmall/user/utils/JwtTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application-local.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/hmall.jks" afterDir="false" />
+    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="trade-service和user-service">
+      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/TradeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/po/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/controller/PayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/domain/dto/PayApplyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/domain/dto/PayOrderFormDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/domain/po/PayOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/domain/vo/PayOrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/enums/PayStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/enums/PayType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/mapper/PayOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/service/IPayOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/service/impl/PayOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/resources/application-local.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/item_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/item_client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +82,7 @@
     "JBLSPRINGBOOTAPP.CB_START": "true",
     "JBLSPRINGBOOTAPP.TF_DELETE_FILE": "App.java,AppTest.java",
     "JBLSPRINGBOOTAPP.TF_GEN_PACKAGE": "controller,service,mapper,domain.dto,domain.vo,domain.po",
-    "JBLSPRINGBOOTAPPGEN.APPNAME": "com.hmall.user.userApplication",
+    "JBLSPRINGBOOTAPPGEN.APPNAME": "com.hmall.pay.payApplication",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -115,17 +95,18 @@
     "Spring Boot.cartApplication.executor": "Run",
     "Spring Boot.itemApplication 8181.executor": "Run",
     "Spring Boot.itemApplication.executor": "Run",
+    "Spring Boot.payApplication.executor": "Run",
     "Spring Boot.tradeApplication.executor": "Run",
     "Spring Boot.userApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/springcluod/hmall/user-service/src/main/resources",
+    "last_opened_file_path": "D:/springcluod/hmall/pay-service/src/main/java/com/hmall/pay/domain/dto",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/springcluod/hmall/user-service/src/main/java/com/heima/Main.java",
+    "onboarding.tips.debug.path": "D:/springcluod/hmall/pay-service/src/main/java/com/heima/Main.java",
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -142,18 +123,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springcluod\hmall\pay-service\src\main\java\com\hmall\pay\domain\dto" />
+      <recent name="D:\springcluod\hmall\pay-service\src\main\resources" />
       <recent name="D:\springcluod\hmall\user-service\src\main\resources" />
       <recent name="D:\springcluod\hmall\user-service\src\main\java\com\hmall\user\config" />
       <recent name="D:\springcluod\hmall\trade-service\src\main\java\com\hmall\trade\service\impl" />
-      <recent name="D:\springcluod\hmall\trade-service\src\main\java\com\hmall\trade\service" />
-      <recent name="D:\springcluod\hmall\trade-service\src\main\java\com\hmall\trade\mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\springcluod\hmall\user-service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hmall.user.utils" />
-      <recent name="com.hmall.user.domain.vo" />
-      <recent name="com.hmall.user.service.impl" />
-      <recent name="com.hmall.user.service" />
-      <recent name="com.hmall.user.mapper" />
+      <recent name="com.hmall.pay.enums" />
+      <recent name="com.hmall.pay.service.impl" />
+      <recent name="com.hmall.pay.service" />
+      <recent name="com.hmall.pay.mapper" />
+      <recent name="com.hmall.pay.domain.vo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -173,6 +157,7 @@
               <entry key="cartApplication" value="STOPPED" />
               <entry key="itemApplication" value="STOPPED" />
               <entry key="itemApplication 8181" value="STOPPED" />
+              <entry key="payApplication" value="FAILED" />
               <entry key="tradeApplication" value="STOPPED" />
               <entry key="userApplication" value="FAILED" />
             </map>
@@ -181,7 +166,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.userApplication">
+  <component name="RunManager" selected="Spring Boot.payApplication">
     <configuration name="HMallApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="hm-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.HMallApplication" />
@@ -230,12 +215,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tradeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="trade-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.trade.tradeApplication" />
+    <configuration name="payApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="pay-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.pay.payApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hmall.trade.*" />
+          <option name="PATTERN" value="com.hmall.pay.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -258,11 +243,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.tradeApplication" />
-        <item itemvalue="Spring Boot.itemApplication 8181" />
-        <item itemvalue="Spring Boot.itemApplication" />
+        <item itemvalue="Spring Boot.payApplication" />
         <item itemvalue="Spring Boot.userApplication" />
         <item itemvalue="Spring Boot.cartApplication" />
+        <item itemvalue="Spring Boot.itemApplication" />
+        <item itemvalue="Spring Boot.itemApplication 8181" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +274,7 @@
       <workItem from="1766194843706" duration="9671000" />
       <workItem from="1766210331838" duration="8175000" />
       <workItem from="1766281350064" duration="17234000" />
-      <workItem from="1766383906515" duration="7834000" />
+      <workItem from="1766383906515" duration="16377000" />
     </task>
     <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
       <option name="closed" value="true" />
@@ -339,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766294365545</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="trade-service和user-service">
+      <option name="closed" value="true" />
+      <created>1766396219598</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766396219598</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +354,8 @@
     <MESSAGE value="黑马商城最新版本" />
     <MESSAGE value="openfreign" />
     <MESSAGE value="openfreign连接池开启" />
-    <option name="LAST_COMMIT_MESSAGE" value="openfreign连接池开启" />
+    <MESSAGE value="trade-service和user-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="trade-service和user-service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -375,6 +369,11 @@
           <url>file://$PROJECT_DIR$/cart-service/src/main/java/com/heima/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pay-service/src/main/java/com/heima/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
