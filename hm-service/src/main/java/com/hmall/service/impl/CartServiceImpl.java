@@ -114,7 +114,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     }
 
     private void checkCartsFull(Long userId) {
-        int count = lambdaQuery().eq(Cart::getUserId, userId).count();
+        int count = Math.toIntExact(lambdaQuery().eq(Cart::getUserId, userId).count());
         if (count >= 10) {
             throw new BizIllegalException(StrUtil.format("用户购物车课程不能超过{}", 10));
         }

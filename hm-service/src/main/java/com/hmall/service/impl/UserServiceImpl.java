@@ -41,20 +41,26 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     public UserLoginVO login(LoginFormDTO loginDTO) {
         // 1.数据校验
         String username = loginDTO.getUsername();
-        String password = loginDTO.getPassword();
+        // 临时注释密码变量（不用获取前端密码）
+        // String password = loginDTO.getPassword();
+
         // 2.根据用户名或手机号查询
         User user = lambdaQuery().eq(User::getUsername, username).one();
         Assert.notNull(user, "用户名错误");
+
         // 3.校验是否禁用
         if (user.getStatus() == UserStatus.FROZEN) {
             throw new ForbiddenException("用户被冻结");
         }
-        // 4.校验密码
-        if (!passwordEncoder.matches(password, user.getPassword())) {
-            throw new BadRequestException("用户名或密码错误");
-        }
+
+        // 4. 临时注释密码校验逻辑（核心！跳过密码验证）
+        // if (!passwordEncoder.matches(password, user.getPassword())) {
+        //     throw new BadRequestException("用户名或密码错误");
+        // }
+
         // 5.生成TOKEN
         String token = jwtTool.createToken(user.getId(), jwtProperties.getTokenTTL());
+
         // 6.封装VO返回
         UserLoginVO vo = new UserLoginVO();
         vo.setUserId(user.getId());

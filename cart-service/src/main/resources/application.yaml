@@ -1,61 +1,11 @@
 server:
   port: 8083
-spring:
-  application:
-    name: cart-service
-  profiles:
-    active: dev
-  datasource:
-    url: jdbc:mysql://${hm.db.host}:3307/hm-cart?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: ${hm.db.pw}
-  cloud:
-    nacos:
-      server-addr: 192.168.133.126:8848
-mybatis-plus:
-  configuration:
-    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
-  global-config:
-    db-config:
-      update-strategy: not_null
-      id-type: auto
-logging:
-  level:
-    com.hmall: debug
-    com.heima.hmall.client: debug
-    okhttp3: DEBUG # 开启OkHttp的DEBUG日志
-
-  pattern:
-    dateformat: HH:mm:ss:SSS
-  file:
-    path: "logs/${spring.application.name}"
-knife4j:
-  enable: true
-  openapi:
-    title: 购物车接口文档
-    description: "购物车接口文档"
-    email: itheima@itcast.cn
-    concat: itheima
-    url: https://www.itcast.cn
-    version: v1.0.0
-    group:
-      default:
-        group-name: default
-        api-rule: package
-        api-rule-resources:
-          - com.hmall.cart.controller
-#开启openfeign的底层连接池，避免每次请求都创建新的tcp连接
 feign:
   okhttp:
     enabled: true
-    #配置feign也可从yml直接指定日志的级别，可省略写配置级别类。
-#  client:
-#    config:
-#      default:  # 这个default是Map的key，代表“所有客户端”，必须写！
-#        loggerLevel: FULL  # 日志级别：NONE/BASIC/HEADERS/FULL
-#        # 可选：还能加超时等其他配置
-#        connectTimeout: 5000
-#        readTimeout: 10000
-
-
+hm:
+  swagger:
+    title: 购物车服务接口文档
+    package: com.hmall.cart.controller
+  db:
+    database: hm-cart
