@@ -4,27 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="网关快速入门">
-      <change afterPath="$PROJECT_DIR$/cart-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/interceptor/UserInfoInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateaway/config/AuthProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateaway/config/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateaway/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateaway/filter/AuthGlobalFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateaway/filter/MyGlobalfilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-gateway/src/main/java/com/hmall/gateaway/utils/JwtTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-gateway/src/main/resources/hmall.jks" afterDir="false" />
+    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="拉取公共配置">
+      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/config/CartProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/item-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/config/DefaultFeignConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/config/DefaultFeignConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-service/src/main/java/com/hmall/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,68 +64,69 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DataGrid.QuickDoc.View&quot;: &quot;TRANSPOSED&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_APP_CONFIG&quot;: &quot;true&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_DELETE_FILE&quot;: &quot;false&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_FEIGN_CLIENTS&quot;: &quot;false&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_GEN_PACKAGE&quot;: &quot;false&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_MAPPER_SCAN&quot;: &quot;false&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_RESOURCES&quot;: &quot;false&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_START&quot;: &quot;false&quot;,
-    &quot;JBLSPRINGBOOTAPP.TF_DELETE_FILE&quot;: &quot;App.java,AppTest.java&quot;,
-    &quot;JBLSPRINGBOOTAPP.TF_GEN_PACKAGE&quot;: &quot;controller,service,mapper,domain.dto,domain.vo,domain.po&quot;,
-    &quot;JBLSPRINGBOOTAPPGEN.APPNAME&quot;: &quot;com.hmall.gateaway.GateawayApplication&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.HMallApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.cartApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.itemApplication 8181.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.itemApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.payApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.tradeApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.userApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/springcluod/hmall/hm-gateway/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/springcluod/hmall/hm-gateway/src/main/java/com/heima/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DataGrid.QuickDoc.View": "TRANSPOSED",
+    "JBLSPRINGBOOTAPP.CB_APP_CONFIG": "true",
+    "JBLSPRINGBOOTAPP.CB_DELETE_FILE": "false",
+    "JBLSPRINGBOOTAPP.CB_FEIGN_CLIENTS": "false",
+    "JBLSPRINGBOOTAPP.CB_GEN_PACKAGE": "false",
+    "JBLSPRINGBOOTAPP.CB_MAPPER_SCAN": "false",
+    "JBLSPRINGBOOTAPP.CB_RESOURCES": "false",
+    "JBLSPRINGBOOTAPP.CB_START": "false",
+    "JBLSPRINGBOOTAPP.TF_DELETE_FILE": "App.java,AppTest.java",
+    "JBLSPRINGBOOTAPP.TF_GEN_PACKAGE": "controller,service,mapper,domain.dto,domain.vo,domain.po",
+    "JBLSPRINGBOOTAPPGEN.APPNAME": "com.hmall.gateaway.GateawayApplication",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.HMallApplication.executor": "Debug",
+    "Spring Boot.cartApplication.executor": "Run",
+    "Spring Boot.itemApplication 8181.executor": "Run",
+    "Spring Boot.itemApplication.executor": "Run",
+    "Spring Boot.payApplication.executor": "Run",
+    "Spring Boot.tradeApplication.executor": "Run",
+    "Spring Boot.userApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/springcluod/hmall/user-service/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/springcluod/hmall/hm-gateway/src/main/java/com/heima/Main.java",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.tradeApplication.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;mysql_aurora&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mysql_aurora"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\springcluod\hmall\hm-gateway\src\main\resources" />
-      <recent name="D:\springcluod\hmall\pay-service\src\main\java\com\hmall\pay\domain\dto" />
-      <recent name="D:\springcluod\hmall\pay-service\src\main\resources" />
       <recent name="D:\springcluod\hmall\user-service\src\main\resources" />
-      <recent name="D:\springcluod\hmall\user-service\src\main\java\com\hmall\user\config" />
+      <recent name="D:\springcluod\hmall\trade-service\src\main\resources" />
+      <recent name="D:\springcluod\hmall\pay-service\src\main\resources" />
+      <recent name="D:\springcluod\hmall\item-service\src\main\resources" />
+      <recent name="D:\springcluod\hmall\hm-gateway\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\springcluod\hmall\user-service" />
@@ -180,7 +176,20 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.payApplication">
+  <component name="RunManager" selected="应用程序.tradeApplication">
+    <configuration name="tradeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hmall.trade.tradeApplication" />
+      <module name="trade-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmall.trade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="hm-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.gateaway.GatewayApplication" />
@@ -249,26 +258,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="userApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.user.userApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmall.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.cartApplication" />
+        <item itemvalue="应用程序.tradeApplication" />
         <item itemvalue="Spring Boot.payApplication" />
-        <item itemvalue="Spring Boot.itemApplication 8181" />
         <item itemvalue="Spring Boot.itemApplication" />
-        <item itemvalue="Spring Boot.userApplication" />
+        <item itemvalue="Spring Boot.cartApplication" />
+        <item itemvalue="Spring Boot.itemApplication 8181" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +294,7 @@
       <workItem from="1766383906515" duration="16487000" />
       <workItem from="1768537403265" duration="4749000" />
       <workItem from="1768957385515" duration="7672000" />
-      <workItem from="1769044046146" duration="38224000" />
+      <workItem from="1769044046146" duration="43700000" />
     </task>
     <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
       <option name="closed" value="true" />
@@ -372,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768980944783</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="拉取公共配置">
+      <option name="closed" value="true" />
+      <created>1769411545211</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1769411545211</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +411,8 @@
     <MESSAGE value="trade-service和user-service" />
     <MESSAGE value="pay-service" />
     <MESSAGE value="网关快速入门" />
-    <option name="LAST_COMMIT_MESSAGE" value="网关快速入门" />
+    <MESSAGE value="拉取公共配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="拉取公共配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
