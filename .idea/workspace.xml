@@ -4,32 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="拉取公共配置">
-      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/fallback/CartClientFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/fallback/ItemClientFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/fallback/TradeClientFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/fallback/UserClientFallback.java" afterDir="false" />
+    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="设置远程调用客户端降级逻辑">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/ICartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/ICartService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/TradeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/TradeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/item_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/item_client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/config/DefaultFeignConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/config/DefaultFeignConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/service/impl/PayOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/service/impl/PayOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,18 +163,18 @@
           <value>
             <map>
               <entry key="GatewayApplication" value="STOPPED" />
-              <entry key="cartApplication" value="STOPPED" />
+              <entry key="cartApplication" value="FAILED" />
               <entry key="itemApplication" value="STOPPED" />
-              <entry key="payApplication" value="STOPPED" />
-              <entry key="tradeApplication" value="STOPPED" />
-              <entry key="userApplication" value="STOPPED" />
+              <entry key="payApplication" value="FAILED" />
+              <entry key="tradeApplication" value="FAILED" />
+              <entry key="userApplication" value="FAILED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.itemApplication">
+  <component name="RunManager" selected="Spring Boot.payApplication">
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="hm-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.gateaway.GatewayApplication" />
@@ -235,6 +221,7 @@
     <configuration name="payApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="pay-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.pay.payApplication" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hmall.pay.*" />
@@ -275,19 +262,19 @@
     <list>
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.HMallApplication" />
+      <item itemvalue="Spring Boot.userApplication" />
       <item itemvalue="Spring Boot.cartApplication" />
       <item itemvalue="Spring Boot.payApplication" />
-      <item itemvalue="Spring Boot.userApplication" />
       <item itemvalue="Spring Boot.itemApplication" />
       <item itemvalue="Spring Boot.tradeApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.itemApplication" />
-        <item itemvalue="Spring Boot.tradeApplication" />
-        <item itemvalue="Spring Boot.cartApplication" />
-        <item itemvalue="Spring Boot.payApplication" />
         <item itemvalue="Spring Boot.userApplication" />
+        <item itemvalue="Spring Boot.payApplication" />
+        <item itemvalue="Spring Boot.cartApplication" />
+        <item itemvalue="Spring Boot.tradeApplication" />
+        <item itemvalue="Spring Boot.itemApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +305,7 @@
       <workItem from="1768537403265" duration="4749000" />
       <workItem from="1768957385515" duration="7672000" />
       <workItem from="1769044046146" duration="43700000" />
-      <workItem from="1769735182603" duration="29976000" />
+      <workItem from="1769735182603" duration="35957000" />
     </task>
     <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
       <option name="closed" value="true" />
@@ -400,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769411545211</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="设置远程调用客户端降级逻辑">
+      <option name="closed" value="true" />
+      <created>1770193145994</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1770193145994</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +431,8 @@
     <MESSAGE value="pay-service" />
     <MESSAGE value="网关快速入门" />
     <MESSAGE value="拉取公共配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="拉取公共配置" />
+    <MESSAGE value="设置远程调用客户端降级逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="设置远程调用客户端降级逻辑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
