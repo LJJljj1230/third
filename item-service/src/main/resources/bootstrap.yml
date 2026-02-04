@@ -9,6 +9,7 @@ spring:
       config:
         file-extension: yaml # 配置文件后缀名
         shared-configs: # 共享配置
-          - dataId: shared-jdbc.yaml # 共享数据库配置
-          - dataId: shared-log.yaml # 共享日志配置
-          - dataId: shared-swagger.yaml # 共享Swagger配置
+        - dataId: shared-jdbc.yaml # 共享mybatis配置
+        - dataId: shared-log.yaml # 共享日志配置
+        - dataId: shared-swagger.yaml # 共享日志配置
+        - dataId: shared-seata.yaml # 共享seata配置

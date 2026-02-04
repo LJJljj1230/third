@@ -1,5 +1,10 @@
 package com.heima.hmall.config;
 
+import com.heima.hmall.client.TradeService;
+import com.heima.hmall.fallback.CartClientFallback;
+import com.heima.hmall.fallback.ItemClientFallback;
+import com.heima.hmall.fallback.TradeClientFallback;
+import com.heima.hmall.fallback.UserClientFallback;
 import com.hmall.common.utils.UserContext;
 import feign.Logger;
 import feign.RequestInterceptor;
@@ -7,6 +12,23 @@ import feign.RequestTemplate;
 import org.springframework.context.annotation.Bean;
 
 public class DefaultFeignConfig {
+    //注册关于商品调用的fallback
+    @Bean
+    public ItemClientFallback itemClientFallback(){
+        return new ItemClientFallback();
+    }
+    @Bean
+    public CartClientFallback cartClientFallback(){
+        return new CartClientFallback();
+    }
+    @Bean
+    public TradeClientFallback tradeClientFallback(){
+        return new TradeClientFallback();
+    }
+    @Bean
+    public UserClientFallback userClientFallback(){
+        return new UserClientFallback();
+    }
 
     //定义feign请求拦截器，设置用户信息
     @Bean

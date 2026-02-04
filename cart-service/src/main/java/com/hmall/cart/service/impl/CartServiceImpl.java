@@ -45,7 +45,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     @Autowired
     private DiscoveryClient discoveryClient;
     private final item_client client;
-    private CartProperties cartProperties;
+    private final CartProperties cartProperties;
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
         // 1.获取登录用户

@@ -8,5 +8,5 @@ hm:
     title: 支付服务接口文档
     package: com.hmall.pay.controller
   db:
-    database: hm-cart
+    database: hm-pay
 

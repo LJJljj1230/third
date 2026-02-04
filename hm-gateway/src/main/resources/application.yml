@@ -19,7 +19,7 @@ spring:
         - id: user
           uri: lb://user-service
           predicates:
-            - Path=/users/**
+            - Path=/users/**,/addressses/**
         - id: trade
           uri: lb://trade-service
           predicates:
@@ -28,6 +28,7 @@ spring:
           uri: lb://pay-service
           predicates:
             - Path=/pay-orders/**
+# 其他配置不变
 hm:
   jwt:
     location: classpath:hmall.jks
@@ -38,6 +39,6 @@ hm:
     excludePaths:
       - /search/**
       - /users/login
+      - /api/users/login  # 新增，让JWT过滤器放行这个路径
       - /items/**
-      - /hi
-# keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
+      - /hias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
