@@ -17,6 +17,8 @@ import com.hmall.pay.service.IPayOrderService;
 import com.heima.hmall.client.TradeService;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.heima.hmall.client.UserService;
@@ -37,6 +39,7 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
     private final UserService userService;
 
     private final TradeService tradeService;
+    private final RabbitTemplate rabbitTemplate;
 
     @Override
     public String applyPayOrder(PayApplyDTO applyDTO) {
@@ -66,8 +69,16 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
             throw new BizIllegalException("交易已支付或关闭！");
         }
         // 5.修改订单状态
-        int i=1/0;
-        tradeService.markOrderPaySuccess(po.getBizOrderNo());
+        //int i=1/0;
+        //tradeService.markOrderPaySuccess(po.getBizOrderNo());
+        //把openfeign改造成发送消息之间的调用。
+        try {
+            rabbitTemplate.convertAndSend("pay.topic", "pay.success", po.getBizOrderNo());
+        } catch (AmqpException e) {
+            System.out.println("支付成功的消息发送失败；支付单id：" + po.getId() + " ；交易单号：" + po.getBizOrderNo());
+            e.printStackTrace();
+        }
+
     }
 
     public boolean markPayOrderSuccess(Long id, LocalDateTime successTime) {

@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="设置远程调用客户端降级逻辑wc">
+    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="支付服务整合分布式事务完成">
+      <change afterPath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/config/MqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/PayStatusListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/service/impl/PayOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/service/impl/PayOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +151,6 @@
           <value>
             <set>
               <option value="HMallApplication" />
-              <option value="itemApplication" />
             </set>
           </value>
         </entry>
@@ -160,7 +166,7 @@
               <entry key="itemApplication" value="STOPPED" />
               <entry key="payApplication" value="STOPPED" />
               <entry key="tradeApplication" value="STOPPED" />
-              <entry key="userApplication" value="FAILED" />
+              <entry key="userApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -264,11 +270,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.userApplication" />
         <item itemvalue="Spring Boot.payApplication" />
         <item itemvalue="Spring Boot.tradeApplication" />
-        <item itemvalue="Spring Boot.cartApplication" />
+        <item itemvalue="Spring Boot.userApplication" />
         <item itemvalue="Spring Boot.itemApplication" />
+        <item itemvalue="Spring Boot.cartApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +305,7 @@
       <workItem from="1768537403265" duration="4749000" />
       <workItem from="1768957385515" duration="7672000" />
       <workItem from="1769044046146" duration="43700000" />
-      <workItem from="1769735182603" duration="41192000" />
+      <workItem from="1769735182603" duration="57568000" />
     </task>
     <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
       <option name="closed" value="true" />
@@ -397,7 +403,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770201939243</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="支付服务整合分布式事务完成">
+      <option name="closed" value="true" />
+      <created>1770342190186</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1770342190186</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +449,8 @@
     <MESSAGE value="拉取公共配置" />
     <MESSAGE value="设置远程调用客户端降级逻辑" />
     <MESSAGE value="设置远程调用客户端降级逻辑wc" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置远程调用客户端降级逻辑wc" />
+    <MESSAGE value="支付服务整合分布式事务完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="支付服务整合分布式事务完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
