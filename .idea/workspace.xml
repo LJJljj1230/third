@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="支付服务整合分布式事务完成">
-      <change afterPath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/config/MqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/PayStatusListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/hmall/cart/listener/OrderStatusListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/constants/MqConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hm-common/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/service/impl/PayOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/java/com/hmall/pay/service/impl/PayOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pay-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/pay-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,11 +265,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.payApplication" />
-        <item itemvalue="Spring Boot.tradeApplication" />
-        <item itemvalue="Spring Boot.userApplication" />
-        <item itemvalue="Spring Boot.itemApplication" />
         <item itemvalue="Spring Boot.cartApplication" />
+        <item itemvalue="Spring Boot.tradeApplication" />
+        <item itemvalue="Spring Boot.payApplication" />
+        <item itemvalue="Spring Boot.itemApplication" />
+        <item itemvalue="Spring Boot.userApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -306,6 +301,7 @@
       <workItem from="1768957385515" duration="7672000" />
       <workItem from="1769044046146" duration="43700000" />
       <workItem from="1769735182603" duration="57568000" />
+      <workItem from="1770968541971" duration="6117000" />
     </task>
     <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
       <option name="closed" value="true" />
