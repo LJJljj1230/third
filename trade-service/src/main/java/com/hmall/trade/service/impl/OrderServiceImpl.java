@@ -1,11 +1,15 @@
 package com.hmall.trade.service.impl;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.heima.hmall.client.ICartService;
 import com.heima.hmall.dto.ItemDTO;
 import com.hmall.common.constants.MqConstants;
 import com.hmall.common.exception.BadRequestException;
+import com.hmall.common.utils.BeanUtils;
+import com.hmall.common.utils.CollUtils;
 import com.hmall.common.utils.UserContext;
 import com.heima.hmall.dto.OrderDetailDTO;
+import com.hmall.trade.constants.TradeMqConstants;
 import com.hmall.trade.domain.dto.OrderFormDTO;
 import com.hmall.trade.domain.po.Order;
 import com.hmall.trade.domain.po.OrderDetail;
@@ -98,17 +102,61 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         } catch (Exception e) {
             throw new RuntimeException("库存不足！");
         }
+        //发送延迟消息
+        rabbitTemplate.convertAndSend(TradeMqConstants.DELAY_EXCHANGE,TradeMqConstants.DELAY_ORDER_ROUTING_KEY,order.getId()
+        ,new MessagePostProcessor() {
+            @Override
+            public Message postProcessMessage(Message message) throws AmqpException {
+                message.getMessageProperties().setDelay(10000);
+                return message;
+            }
+        });
        // int i=1/0;
         return order.getId();
     }
 
     @Override
     public void markOrderPaySuccess(Long orderId) {
+        //查找订单
+        Order old = getById(orderId);
+        //判断订单状态
+        if (old == null || old.getStatus() != 1) {
+            //订单不存在或订单状态不为1（待支付）；放弃更新状态
+            return;
+        }
+        //修改订单状态
         Order order = new Order();
         order.setId(orderId);
         order.setStatus(2);
         order.setPayTime(LocalDateTime.now());
         updateById(order);
+    }
+
+    @Override
+    @GlobalTransactional
+    public void cancelOrder(Long orderId) {
+        //1、更新订单的状态为已关闭
+        lambdaUpdate()
+                .set(Order::getStatus, 5)
+                .set(Order::getCloseTime, LocalDateTime.now())
+                .eq(Order::getId, orderId)
+                .eq(Order::getStatus, 1)
+                .update();
+        //2、回退商品库存；商品的购买数在订单详情中
+        //根据订单id查询订单详情
+        LambdaQueryWrapper<OrderDetail> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(OrderDetail::getOrderId, orderId);
+        List<OrderDetail> orderDetails = detailService.list(queryWrapper);
+        if (CollUtils.isEmpty(orderDetails)) {
+            return;
+        }
+        List<OrderDetailDTO> orderDetailDTOS = BeanUtils.copyList(orderDetails, OrderDetailDTO.class);
+        //将购买数量修改为负数
+        for (OrderDetailDTO orderDetailDTO : orderDetailDTOS) {
+            orderDetailDTO.setNum(-orderDetailDTO.getNum());
+        }
+
+        item_client.deductStock(orderDetailDTOS);
     }
 
     private List<OrderDetail> buildDetails(Long orderId, List<ItemDTO> items, Map<Long, Integer> numMap) {
