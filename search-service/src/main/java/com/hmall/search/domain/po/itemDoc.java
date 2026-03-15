@@ -1,14 +1,12 @@
-package com.hmall.item.domain.dto;
+package com.hmall.search.domain.po;
 
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
-@ApiModel(description = "商品实体")
-public class ItemDTO {
+public class itemDoc {
     @ApiModelProperty("商品id")
     private Long id;
     @ApiModelProperty("SKU名称")
@@ -23,16 +21,13 @@ public class ItemDTO {
     private String category;
     @ApiModelProperty("品牌名称")
     private String brand;
-    @ApiModelProperty("规格")
-    private String spec;
+
     @ApiModelProperty("销量")
     private Integer sold;
     @ApiModelProperty("评论数")
     private Integer commentCount;
     @ApiModelProperty("是否是推广广告，true/false")
     private Boolean isAD;
-    @ApiModelProperty("商品状态 1-正常，2-下架，3-删除")
-    private Integer status;
     @ApiModelProperty("更新时间")
     private LocalDateTime updateTime;
 }

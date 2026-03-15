@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: search-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.133.126:8848
+      config:
+        file-extension: yaml # 配置文件后缀名
+        shared-configs: # 共享配置
+          - dataId: shared-jdbc.yaml # 共享mybatis配置
+          - dataId: shared-log.yaml # 共享日志配置
+          - dataId: shared-swagger.yaml # 共享日志配置
+          - dataId: shared-seata.yaml # 共享seata配置
+          - data-id: shared-mq.yaml
+  # 新增 Elasticsearch 连接配置
+  elasticsearch:
+    rest:
+      # ES 服务地址（对应你的 192.168.133.126:9200）
+      uris: http://192.168.133.126:9200
+      # 连接超时时间（建议设置，避免短时间连接失败）
+      connection-timeout: 5000ms
+      # 读取超时时间（适配搜索场景，避免长查询超时）
+      read-timeout: 30000ms
+      # 可选：如果 ES 开启了账号密码认证，补充以下配置
+      # username: elastic
+      # password: your_es_password
+
+# 可选：自定义 ES 索引名（和你代码中的 index_name 对应，方便统一管理）
+

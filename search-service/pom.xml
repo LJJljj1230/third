@@ -9,7 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>item-service</artifactId>
+    <artifactId>search-service</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -28,11 +28,13 @@
             <artifactId>hm-common</artifactId>
             <version>1.0.0</version>
         </dependency>
-        <!--sentinel-->
+        <!--api-->
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+            <groupId>com.heima</groupId>
+            <artifactId>hm-api</artifactId>
+            <version>1.0.0</version>
         </dependency>
+
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
@@ -47,36 +49,23 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
-        <!--seata-->
+        <!-- spring amqp -->
         <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
+
         <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--数据库-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <!--mybatis-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
+
         <!--单元测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-        <!-- spring amqp -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
 
 

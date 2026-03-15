@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="es客户端测试连接成功">
-      <change afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/domain/po/itemDoc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/item-service/src/test/java/com/hmall/item/es/insertTest.java" afterDir="false" />
+    <list default="true" id="4c64968c-7b04-4dc6-93ff-0077a03a8941" name="更改" comment="es成功导入商品数据">
+      <change afterPath="$PROJECT_DIR$/search-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/main/java/com/hmall/search/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/main/java/com/hmall/search/domain/po/itemDoc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/main/java/com/hmall/search/domain/query/ItemPageQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/main/java/com/hmall/search/domain/vo/PageVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/main/java/com/hmall/search/listener/itemStatusListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/main/java/com/hmall/search/service/ISearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/main/java/com/hmall/search/service/impl/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search-service/src/test/java/com/hmall/search/es/esSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-service/src/test/java/com/hmall/item/es/IndexTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/test/java/com/hmall/item/es/IndexTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/item_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/client/item_client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/dto/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/dto/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/fallback/ItemClientFallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-api/src/main/java/com/heima/hmall/fallback/ItemClientFallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/constants/MqConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/hm-common/src/main/java/com/hmall/common/constants/MqConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hm-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hm-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/domain/dto/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/domain/dto/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/IItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/IItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/java/com/hmall/item/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/item-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,16 +79,17 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DataGrid.QuickDoc.View&quot;: &quot;TRANSPOSED&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_APP_CONFIG&quot;: &quot;true&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_APP_CONFIG&quot;: &quot;false&quot;,
     &quot;JBLSPRINGBOOTAPP.CB_DELETE_FILE&quot;: &quot;false&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_FEIGN_CLIENTS&quot;: &quot;false&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_GEN_PACKAGE&quot;: &quot;false&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_FEIGN_CLIENTS&quot;: &quot;true&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_GEN_PACKAGE&quot;: &quot;true&quot;,
     &quot;JBLSPRINGBOOTAPP.CB_MAPPER_SCAN&quot;: &quot;false&quot;,
     &quot;JBLSPRINGBOOTAPP.CB_RESOURCES&quot;: &quot;false&quot;,
-    &quot;JBLSPRINGBOOTAPP.CB_START&quot;: &quot;false&quot;,
+    &quot;JBLSPRINGBOOTAPP.CB_START&quot;: &quot;true&quot;,
     &quot;JBLSPRINGBOOTAPP.TF_DELETE_FILE&quot;: &quot;App.java,AppTest.java&quot;,
-    &quot;JBLSPRINGBOOTAPP.TF_GEN_PACKAGE&quot;: &quot;controller,service,mapper,domain.dto,domain.vo,domain.po&quot;,
-    &quot;JBLSPRINGBOOTAPPGEN.APPNAME&quot;: &quot;com.hmall.gateaway.GateawayApplication&quot;,
+    &quot;JBLSPRINGBOOTAPP.TF_FEIGN_CLIENTS_PACKAGE&quot;: &quot;com.hmall.search.client&quot;,
+    &quot;JBLSPRINGBOOTAPP.TF_GEN_PACKAGE&quot;: &quot;controller,service,domain.dto,domain.vo,domain.po,domin.query&quot;,
+    &quot;JBLSPRINGBOOTAPPGEN.APPNAME&quot;: &quot;com.hmall.search.SearchApplication&quot;,
     &quot;JUnit.IndexTest.deleteIndex.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.IndexTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.IndexTest.isExist.executor&quot;: &quot;Run&quot;,
@@ -74,6 +97,10 @@
     &quot;JUnit.IndexTest.testCreateItem (1).executor&quot;: &quot;Run&quot;,
     &quot;JUnit.IndexTest.testCreateItem.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.IndexTest.testGetConnection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.esSearch.testMatch.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.esSearch.testMatchAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.esSearch.textBool.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.esSearch.textSort.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.insertTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.insertTest.testGetConnection.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
@@ -86,6 +113,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.HMallApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SearchApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.cartApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.itemApplication 8181.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.itemApplication.executor&quot;: &quot;Run&quot;,
@@ -94,18 +122,18 @@
     &quot;Spring Boot.userApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/springcluod/hmall/user-service/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/springcluod/hmall/search-service/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/springcluod/hmall/hm-gateway/src/main/java/com/heima/Main.java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/springcluod/hmall/search-service/src/main/java/com/heima/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.tradeApplication.executor&quot;: &quot;Run&quot;
   },
@@ -121,21 +149,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springcluod\hmall\search-service\src\main\resources" />
       <recent name="D:\springcluod\hmall\user-service\src\main\resources" />
       <recent name="D:\springcluod\hmall\trade-service\src\main\resources" />
       <recent name="D:\springcluod\hmall\pay-service\src\main\resources" />
       <recent name="D:\springcluod\hmall\item-service\src\main\resources" />
-      <recent name="D:\springcluod\hmall\hm-gateway\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\springcluod\hmall\user-service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hmall.search.controller" />
+      <recent name="com.hmall.search.domin.query" />
+      <recent name="com.hmall.search.domain.po" />
       <recent name="com.hmall.item.es" />
       <recent name="com.heima.hmall.dto" />
-      <recent name="com.hmall.gateaway.config" />
-      <recent name="com.hmall.gateaway.utils" />
-      <recent name="com.hmall.pay.enums" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -164,108 +192,62 @@
           <value>
             <map>
               <entry key="GatewayApplication" value="STOPPED" />
+              <entry key="SearchApplication" value="STOPPED" />
+              <entry key="cartApplication" value="STOPPED" />
+              <entry key="itemApplication" value="STOPPED" />
+              <entry key="payApplication" value="STOPPED" />
+              <entry key="tradeApplication" value="STOPPED" />
+              <entry key="userApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.insertTest">
-    <configuration name="IndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="item-service" />
+  <component name="RunManager" selected="Spring Boot.payApplication">
+    <configuration name="esSearch.testMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="search-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hmall.item.es.*" />
+          <option name="PATTERN" value="com.hmall.search.es.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hmall.item.es" />
-      <option name="MAIN_CLASS_NAME" value="com.hmall.item.es.IndexTest" />
-      <option name="METHOD_NAME" value="testCreateItem" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IndexTest.testCreateItem (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="item-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmall.item.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmall.item.es" />
-      <option name="MAIN_CLASS_NAME" value="com.hmall.item.es.IndexTest" />
-      <option name="METHOD_NAME" value="testCreateItem" />
+      <option name="PACKAGE_NAME" value="com.hmall.search.es" />
+      <option name="MAIN_CLASS_NAME" value="com.hmall.search.es.esSearch" />
+      <option name="METHOD_NAME" value="testMatch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexTest.testCreateItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="item-service" />
+    <configuration name="esSearch.textBool" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="search-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hmall.item.es.*" />
+          <option name="PATTERN" value="com.hmall.search.es.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hmall.item.es" />
-      <option name="MAIN_CLASS_NAME" value="com.hmall.item.es.IndexTest" />
-      <option name="METHOD_NAME" value="testCreateItem" />
+      <option name="PACKAGE_NAME" value="com.hmall.search.es" />
+      <option name="MAIN_CLASS_NAME" value="com.hmall.search.es.esSearch" />
+      <option name="METHOD_NAME" value="textBool" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IndexTest.testCreateItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="item-service" />
+    <configuration name="esSearch.textSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="search-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hmall.item.es.*" />
+          <option name="PATTERN" value="com.hmall.search.es.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hmall.item.es" />
-      <option name="MAIN_CLASS_NAME" value="com.hmall.item.es.IndexTest" />
-      <option name="METHOD_NAME" value="testCreateItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=java.base/sun.reflect=ALL-UNNAMED" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="item-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmall.item.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmall.item.es" />
-      <option name="MAIN_CLASS_NAME" value="com.hmall.item.es.insertTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="insertTest.testGetConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="item-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmall.item.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmall.item.es" />
-      <option name="MAIN_CLASS_NAME" value="com.hmall.item.es.insertTest" />
-      <option name="METHOD_NAME" value="testGetConnection" />
+      <option name="PACKAGE_NAME" value="com.hmall.search.es" />
+      <option name="MAIN_CLASS_NAME" value="com.hmall.search.es.esSearch" />
+      <option name="METHOD_NAME" value="textSort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -286,22 +268,109 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="search-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.search.SearchApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmall.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cart-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.cart.cartApplication" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmall.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="itemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="item-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.item.itemApplication" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmall.item.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="payApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="pay-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.pay.payApplication" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmall.pay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tradeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="trade-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.trade.tradeApplication" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmall.trade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="userApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hmall.user.userApplication" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmall.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.IndexTest.testCreateItem (1)" />
       <item itemvalue="JUnit.insertTest" />
-      <item itemvalue="JUnit.insertTest.testGetConnection" />
-      <item itemvalue="JUnit.IndexTest.testCreateItem" />
-      <item itemvalue="JUnit.IndexTest" />
+      <item itemvalue="JUnit.esSearch.testMatch" />
+      <item itemvalue="JUnit.esSearch.textBool" />
+      <item itemvalue="JUnit.esSearch.textSort" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.HMallApplication" />
+      <item itemvalue="Spring Boot.cartApplication" />
+      <item itemvalue="Spring Boot.itemApplication" />
+      <item itemvalue="Spring Boot.tradeApplication" />
+      <item itemvalue="Spring Boot.userApplication" />
+      <item itemvalue="Spring Boot.payApplication" />
+      <item itemvalue="Spring Boot.SearchApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.insertTest" />
-        <item itemvalue="JUnit.insertTest.testGetConnection" />
-        <item itemvalue="JUnit.IndexTest" />
-        <item itemvalue="JUnit.IndexTest.testCreateItem (1)" />
-        <item itemvalue="JUnit.IndexTest.testCreateItem" />
+        <item itemvalue="Spring Boot.SearchApplication" />
+        <item itemvalue="JUnit.esSearch.textSort" />
+        <item itemvalue="JUnit.esSearch.textBool" />
+        <item itemvalue="JUnit.esSearch.testMatch" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +409,17 @@
       <workItem from="1772327590765" duration="13581000" />
       <workItem from="1772523027566" duration="1278000" />
       <workItem from="1772587035558" duration="15855000" />
-      <workItem from="1772696397013" duration="3457000" />
+      <workItem from="1772696397013" duration="9279000" />
+      <workItem from="1772763368609" duration="12324000" />
+      <workItem from="1772793074104" duration="8043000" />
+      <workItem from="1772846769456" duration="11968000" />
+      <workItem from="1772949291961" duration="8000" />
+      <workItem from="1772952028640" duration="6769000" />
+      <workItem from="1773019393901" duration="5061000" />
+      <workItem from="1773194781693" duration="4809000" />
+      <workItem from="1773215618157" duration="5682000" />
+      <workItem from="1773300640108" duration="2630000" />
+      <workItem from="1773384034650" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="不包括class文件的第一次提交">
       <option name="closed" value="true" />
@@ -462,7 +541,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772439962796</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="es成功导入商品数据">
+      <option name="closed" value="true" />
+      <created>1772705516024</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1772705516024</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +590,8 @@
     <MESSAGE value="支付服务整合分布式事务完成" />
     <MESSAGE value="清理购物车发送消息" />
     <MESSAGE value="es客户端测试连接成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="es客户端测试连接成功" />
+    <MESSAGE value="es成功导入商品数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="es成功导入商品数据" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -527,6 +615,11 @@
           <url>file://$PROJECT_DIR$/hm-gateway/src/main/java/com/heima/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/search-service/src/main/java/com/heima/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
